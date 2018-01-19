@@ -1,0 +1,322 @@
+/*общие стили*/
+
+*, 
+figure {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+}
+  
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /*regular*/
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h1, h2, h3,
+.header-slogan,
+.footer-slogan {
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*шапка*/
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+
+    color: #fff;
+}
+
+.header-wrap {
+    max-width: 1560px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 9vh;
+    margin-right: 9vh;
+}
+
+.header-logo-box {
+    width: 191px;
+    margin-top: 4.5vh;
+    margin-bottom: 30vh;
+}
+
+.slogan-box {
+    width: 100%;
+}
+
+.header-slogan {
+    font-weight: 700;
+    letter-spacing: 4px;
+    display: block;
+}
+
+.header-slogan-1 {
+    margin-bottom: 3.5vh;
+}
+
+.header-slogan-2 {
+    margin-left: 30%;
+    margin-bottom: 23vh;
+}
+
+/*кнопки*/
+
+.btn {
+    font-size: 14px;
+    border-radius: 35px;
+    background-color: #5e42b0;
+    box-shadow: 0px 16px 24px 0 #0a0e34;
+    display: inline-block;
+    text-align: center;
+    width: 311px;
+    height: 77px;
+    position: relative;
+    padding: 30px 25px;
+}
+
+.btn-apple {
+    margin-right: 50px;
+}
+
+.btn-apple::before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 3px;
+    width: 42px;
+    height: 48px;
+    background: url("../img/apple_logo.svg") no-repeat 0 0;
+}
+
+.btn-google::before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 3px;
+    width: 40px;
+    height: 50px;
+    background: url("../img/google-play.svg") no-repeat 0 0;
+}
+
+/*блок атлеты и игроки*/
+
+.athlets, .players {
+    display: flex;
+    flex-direction: column;
+    position: relative;    
+}
+
+.athlets-img, .players-img {
+    position: absolute;
+}
+
+.big-block-title {
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 60px;
+    color: #e7e7e7;
+}
+
+.big-block-title--motiv {
+    color: #e6e6e6;
+}
+
+.mid-block-title {
+    color: #c1c1c1;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 27px;
+}
+
+.block-text {
+    font-size: 2rem;
+}
+
+.block-text-third {
+    color: #ffffff;
+}
+
+.athlets-list {
+    margin: 0;
+    padding: 0;
+    counter-reset: myCounter;
+}
+
+.athlets-list li::before {
+    content: counter(myCounter);
+    counter-increment: myCounter;
+    border-bottom: 4px solid #5e42b0;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.athlets-list-2 {
+    background-color: #f6f4fa;
+}
+
+.athlets-list-3 {
+    background-color: #5e42b0;
+}
+
+.players-list-2 {
+    background-color: #f5f6f7;
+}
+
+.players-list-3 {
+    background-color: #0a0e34;
+}
+
+/*мотивация*/
+
+.motiv-list {
+    display: flex;
+    width: 100%;
+}
+
+.motiv-img,
+.motiv-descr {
+    width: 50%;
+}
+
+/*подвал*/
+
+.footer {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 4px;
+    line-height: 60px;
+}
+
+.footer-slogan {
+    font-size: 30px;
+    color: #a496ca;
+    line-height: 1.15;
+}
+
+/*телефон*/
+
+@media (max-width: 640px) {
+    .header-logo-box {
+        width: 133px;
+    }
+    
+    .header-slogan {
+        font-size: 2.8rem;
+        line-height: 20px;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        width: 100%;
+        height: 35px;
+    }
+
+    .header-wrap {
+        margin-right: 6.25%;
+        margin-left: 6.25%;
+    }
+
+    .mid-block-title {
+        font-size: 2.8rem;
+        line-height: 35px;
+    }
+
+    .big-block-title {
+        font-size: 5rem;
+        line-height: 40px;
+    }
+
+    .motiv-list {
+        display: block;
+        width: 100%;
+    }
+    
+    .motiv-img,
+    .motiv-img img,
+    .motiv-descr {
+        width: 100%;
+    }
+
+    .footer-title {
+        font-size: 3.2rem;
+    }
+}
+
+/*планшет*/
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .header-slogan {
+        font-size: 6.4rem;
+        line-height: 46px;
+    }  
+
+    .header-logo-box {
+        width: 205px;
+    }
+
+    .motiv-list {
+        display: block;
+        width: 100%;
+    }
+    
+    .motiv-img,
+    .motiv-img img,
+    .motiv-descr {
+        max-width: 100%;
+    }
+}
+
+/*десктоп*/
+
+@media (min-width: 961px) and (max-width: 1920px) {
+    .header-slogan {
+        font-size: 9rem;
+        line-height: 70px;
+    }
+}
