@@ -59,12 +59,9 @@ img {
     color: #fff;
 
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding-top: 4.7vh;
-    padding-bottom: 11.4vh;
     justify-content: space-between;
 }
 
@@ -486,8 +483,8 @@ img {
 @media (min-width: 641px) and (max-width: 960px) {
     .header {
         background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-header_768.jpg');
-        padding-top: 4.2vh;
-        padding-bottom: 9.4vh;
+        padding-top: 40px;
+        padding-bottom: 90px;
     }
 
     .header-slogan {
@@ -622,6 +619,8 @@ img {
 @media (min-width: 961px) {
     .header {
         background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-header_1920.jpg');
+        padding-top: 45px;
+        padding-bottom: 110px;
     }
 
     .header-slogan {
