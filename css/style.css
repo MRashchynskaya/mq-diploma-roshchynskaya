@@ -591,7 +591,6 @@ img {
         font-size: 3.2rem;
         margin-top: 42px;
         margin-bottom: 20.5px;
-        letter-spacing: 0px;
     }
 
     .mid-block-title-1 {
@@ -642,8 +641,8 @@ img {
 
     .players-list,
     .players-header {
-        padding-left: 16.7%;
-        padding-right: 54%;
+        padding-left: 16%;
+        padding-right: 53%;
     }
 
     .athlets-list,
@@ -674,7 +673,6 @@ img {
     .block-text {
         font-size: 2rem;
         line-height: 1.4;
-        padding-bottom: 66px;
         padding-bottom: 6.94%;
     }
 
