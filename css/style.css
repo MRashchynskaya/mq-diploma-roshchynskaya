@@ -157,12 +157,11 @@ img {
     left: calc(50% - 685px);
 }
 
-
-
 .big-block-title {
     font-weight: 700;
     font-size: 8rem;
     color: #e7e7e7;
+    font-size: 4.2vw; /*резиновый шрифт из расчета 80px при ширине вьюпорта 1903*/
 }
 
 .box-num {
@@ -239,6 +238,7 @@ img {
 .motiv-img,
 .motiv-descr {
     flex-basis: 50%;
+    font-size: 0;
 }
 
 .motiv-num {
@@ -670,6 +670,7 @@ img {
         font-size: 2rem;
         line-height: 1.4;
         padding-bottom: 66px;
+        padding-bottom: 6.94%;
     }
 
     .athlets-list-3 .block-text,
@@ -683,22 +684,21 @@ img {
 
     .motiv-list:nth-child(even) .big-block-title,
     .motiv-list:nth-child(even) .block-text {
-        margin-left: 190px;
+        margin-left: 19.97%;
+        margin-right: 85px; /*добавили отступ справа чтобы FIND CONTACT не пересекался с квадратом "02"*/
     }
 
     .motiv-descr .big-block-title {
-        margin-top: 240px;
-        margin-bottom: 92.2px;
-    }
-
-    .motiv-descr .big-block-title,
-    .motiv-descr .block-text {
+        margin-top: 25.22%;
+        margin-bottom: 9.69%;
         margin-left: 130px;
     }
 
     .motiv-descr .block-text {
+        margin-left: 130px;
         font-size: 2.4rem;
         max-width: 538px;
+        font-size: calc(1.1vw + 3px); /*резиновый шрифт из расчета 24px при ширине вьюпорта 1903. Надо было 1,26vw, но 3 пикселя из 24 оставили как константу (1,1vw = 21px если vw = 1903) - чтобы при уменьшении ширины шрифт не становился очень мелким. */
     }
 
     .motiv-num {
