@@ -641,8 +641,8 @@ img {
 
     .players-list,
     .players-header {
-        padding-left: 16%;
-        padding-right: 53%;
+        padding-left: 15%;
+        padding-right: 52%;
     }
 
     .athlets-list,
@@ -653,17 +653,17 @@ img {
 
     .athlets .big-block-title,
     .players .big-block-title {
-        margin-top: 95px;
+        margin-top: 100px;
     }
 
     .mid-block-title {
         margin-top: 60.5px;
-        margin-bottom: 14px;
+        margin-bottom: 20px;
     }
 
     .athlets-list-3 .mid-block-title,
     .players-list-3 .mid-block-title {
-        margin-top: 80px;
+        margin-top: 85px;
     }
 
     .players-img {
