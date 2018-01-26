@@ -232,10 +232,13 @@ img {
 .motiv-list {
     display: flex;
     width: 100%;
+}
+
+.motiv-wrap {
     position: relative;
 }
 
-.motiv-img,
+.motiv-wrap,
 .motiv-descr {
     flex-basis: 50%;
     font-size: 0;
@@ -424,7 +427,7 @@ img {
     .motiv-num {
         width: 70px;
         height: 70px;
-        top: 295px;
+        bottom: -4%;
         left: 6.25%;
     }
 
@@ -455,8 +458,8 @@ img {
 
     .footer {
         background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-footer_320.jpg');
-        padding-top: 220px;
-        padding-bottom: 6px;
+        padding-top: 65%;
+        padding-bottom: 1.87%;
     }
 
     .footer-title {
@@ -512,14 +515,14 @@ img {
     .motiv-img,
     .motiv-img img,
     .motiv-descr {
-        max-width: 100%;
+        width: 100%;
     }
 
     .motiv-num {
         width: 115px;
         height: 115px;
-        top: 505px;
         left: 4%;
+        bottom: -4%;
     }
 
     .motiv-list .big-block-title,
@@ -539,8 +542,13 @@ img {
     }
 
     .players .big-block-title,
-    .athlets .big-block-title{
+    .athlets .big-block-title {
         margin-top: 65px;
+        font-size: 8rem;
+    }
+
+    .motiv-list .big-block-title {
+        font-size: 8rem;
     }
 
     .athlets-img {
@@ -566,7 +574,7 @@ img {
 
     .players-img {
         right: 0;
-        top: 63px;
+        top: 6%;
     }
 
     .athlets .block-text,
@@ -591,18 +599,14 @@ img {
 
     .footer {
         background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-footer_768.jpg');
-        padding-top: 320px;
-        padding-bottom: 20px;
+        padding-top: 35%;
+        padding-bottom: 2.1%;
     }
 
     .footer-slogan {
         font-size: 3.6rem;
         text-align: center;
-        margin-bottom: 260px;
-    }
-
-    .footer-title {
-        padding-top: px;
+        margin-bottom: 30%;
     }
 
     .footer-title-box::before {
@@ -678,6 +682,14 @@ img {
         padding-bottom: 92px;
     }
 
+    .motiv-list {
+        position: relative;
+    }
+
+    .motiv-wrap {
+        position: static;
+    }
+
     .motiv-list:nth-child(even) {
         flex-direction: row-reverse;
     }
@@ -710,8 +722,8 @@ img {
 
     .footer {
         background-image: linear-gradient(to right, rgba(10,14,52,0.9) 0%, rgba(10,14,52,0.9) 100%), url('../img/Background-footer_1920.jpg');
-        padding-top: 230px;
-        padding-bottom: 50px;
+        padding-top: 12%;
+        padding-bottom: 2.63%;
     }
 
     .footer-title-box::before {
